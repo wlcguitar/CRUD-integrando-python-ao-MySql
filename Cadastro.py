@@ -52,7 +52,7 @@ def ler_cadastro():
     objt_conexao = mc.connect(
         host = "localhost",
         user = "root",
-        password = "5028",
+        password = "123456",
         database = "mydatabase"
     )
 
@@ -76,7 +76,7 @@ def cadastrar(nome, sobrenome, email):
     objt_conexao = mc.connect(
         host = "localhost",
         user = "root",
-        password = "5028",
+        password = "123456",
         database = "mydatabase"
     )
 
@@ -99,7 +99,7 @@ def delete(nome):
     objt_conexão = mysql.connector.connect(
         host = "localhost",
         user = "root",
-        password = "5028",
+        password = "123456",
         database = "mydatabase"
     )
 
