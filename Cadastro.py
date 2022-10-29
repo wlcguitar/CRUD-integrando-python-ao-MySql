@@ -1,8 +1,4 @@
 def titulo(txt, linha = True):
-    """Função para formatar titulo
-    parâmentro txt 
-    linha se True adicioana uma linha extra inferior
-    """
     x = str(txt).title()
     print("="*40)
     print(x.center(40))
@@ -11,8 +7,6 @@ def titulo(txt, linha = True):
 
 
 def leia_int(txt):
-    """Função criada para validar um número inteiro
-    param: txt convertido para um valor int"""
     while True:
         try:
             n = int(input(txt))
@@ -52,7 +46,7 @@ def ler_cadastro():
     objt_conexao = mc.connect(
         host = "localhost",
         user = "root",
-        password = "5028",
+        password = "123456",
         database = "mydatabase"
     )
 
@@ -76,7 +70,7 @@ def cadastrar(nome, sobrenome, email):
     objt_conexao = mc.connect(
         host = "localhost",
         user = "root",
-        password = "5028",
+        password = "123456",
         database = "mydatabase"
     )
 
@@ -95,11 +89,10 @@ def cadastrar(nome, sobrenome, email):
 
 def delete(nome):
     import mysql.connector  
-    #DELETE ==> sql = DELETE FROM pessoas WHERE Nome = nome
     objt_conexão = mysql.connector.connect(
         host = "localhost",
         user = "root",
-        password = "5028",
+        password = "123456",
         database = "mydatabase"
     )
 
